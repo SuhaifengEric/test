@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shf.testsocket.MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+      <EditText
+          android:id="@+id/et_IP"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="请输入IP地址，例：127.0.0.1"
+          />
+       <Button
+           android:id="@+id/bt_connect"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="连接"
+           />
+   </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="16"
+        android:gravity="left"
+        android:text="你好"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:id="@+id/tv_show_content"
+        />
+
+    <EditText
+        android:id="@+id/et_send_content"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:id="@+id/bt_send" />
+
+</LinearLayout>
